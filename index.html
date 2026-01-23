@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Love Box</title>
+    <style>
+        body {
+            background-color: #ffd6e8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background-color: white;
+            width: 320px;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        .sticker {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 25px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .yes {
+            background-color: #ff4d88;
+            color: white;
+        }
+
+        .no {
+            background-color: #cccccc;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 22px;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <div class="sticker"></div>
+
+    <h2>Do You Love Me?</h2>
+
+    <button class="yes" onclick="showLove()">Yes</button>
+    <button class="no" onclick="showLove()">No</button>
+
+    <p id="result"></p>
+</div>
+
+<script>
+    function showLove() {
+        document.getElementById("result").innerHTML = "❤️ Yes I Love You ❤️";
+    }
+</script>
+
+</body>
+</html>
